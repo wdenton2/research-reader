@@ -1,0 +1,7 @@
+# Optional override for building from a local checkout.
+# docker compose -f compose.yaml -f compose.build.yaml up -d --build
+services:
+  research-reader:
+    image: research-reader:local
+    build: .
+    pull_policy: build

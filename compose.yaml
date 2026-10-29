@@ -1,0 +1,21 @@
+services:
+  research-reader:
+    image: ${RESEARCH_READER_IMAGE:-ghcr.io/wdenton2/research-reader:latest}
+    init: true
+    restart: unless-stopped
+    ports:
+      - "${READER_BIND_IP:-127.0.0.1}:${READER_PORT:-4173}:4173"
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 4173
+      DATA_DIR: /app/data
+    volumes:
+      - reader-data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  reader-data:

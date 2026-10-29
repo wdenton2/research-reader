@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Test PubMed search</title>
+    <link>https://pubmed.ncbi.nlm.nih.gov/rss-feed/?feed_id=test&amp;ff=20261024</link>
+    <atom:link href="https://pubmed.ncbi.nlm.nih.gov/rss-feed/?feed_id=test&amp;ff=20261024" rel="self"/>
+    <generator>PubMed RSS feeds (2.20.1)</generator>
+    <item>
+      <title>Example trial &amp; follow-up</title>
+      <link>https://pubmed.ncbi.nlm.nih.gov/12345678/?utm_source=rss&amp;fc=20261024&amp;ff=20261025&amp;v=2.20.1</link>
+      <description>CONCLUSION: The short summary only.</description>
+      <content:encoded><![CDATA[<div><p style="color: #4aa564;">Example J. 2026 Oct 23. doi: 10.1234/example.</p><p><b>ABSTRACT</b></p><p>PURPOSE: A synthetic example &amp; follow-up.</p><p>RESULTS: Full results beyond the short description.</p><p>CONCLUSION: The short summary only.</p><p style="color: lightgray">PMID:<a href="https://pubmed.ncbi.nlm.nih.gov/12345678/">12345678</a> | PMC:PMC12345678 | DOI:<a href=https://doi.org/10.1234/example>10.1234/example</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">pubmed:12345678</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:00 -0400</pubDate>
+      <dc:creator>Alex Example</dc:creator>
+      <dc:creator>Jordan Example</dc:creator>
+      <dc:date>2026-10-23</dc:date>
+      <dc:source>Example Journal</dc:source>
+      <dc:title>Example trial &amp; follow-up</dc:title>
+      <dc:identifier>pmid:12345678</dc:identifier>
+      <dc:identifier>doi:10.1234/example</dc:identifier>
+    </item>
+    <item>
+      <title>Example without an abstract</title>
+      <link>https://pubmed.ncbi.nlm.nih.gov/12345679/</link>
+      <description>No abstract</description>
+      <content:encoded><![CDATA[<div><p>Example J. 2026 Oct 23.</p><p><b>NO ABSTRACT</b></p><p>PMID:12345679 | DOI:10.1234/noabstract</p></div>]]></content:encoded>
+      <dc:title>Example without an abstract</dc:title>
+      <dc:source>Example Journal</dc:source>
+      <dc:identifier>pmid:12345679</dc:identifier>
+      <dc:identifier>doi:10.1234/noabstract</dc:identifier>
+    </item>
+  </channel>
+</rss>
